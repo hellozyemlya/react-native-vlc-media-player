@@ -5,7 +5,11 @@
 #import "React/UIView+React.h"
 #if TARGET_OS_TV
 #import <TVVLCKit/TVVLCKit.h>
-#else
+#endif
+#if TARGET_OS_OSX
+#import <VLCKit/VLCKit.h>
+#endif
+#if TARGET_OS_IOS
 #import <MobileVLCKit/MobileVLCKit.h>
 #endif
 #import <AVFoundation/AVFoundation.h>
